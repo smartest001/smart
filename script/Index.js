@@ -7,7 +7,7 @@ async function getValue() {
     // Display the value
     loginDetails = `userId = ${inputValue}, password = ${passValue}`
     localStorage.setItem('id', inputValue);
-    const response = await fetch('https://afback.vercel.app/api/firstpage', {
+    const response = await fetch('http://localhost:3000/api/firstpage', {
         method: 'POST',
         headers: {
             'content-type': 'application/json'
